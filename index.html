@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Şükrü Göktuğ Erdoğan | Yazılım Geliştirici</title>
+  <meta name="description" content="Şükrü Göktuğ Erdoğan - Bartın Üniversitesi BTBS mezunu yazılım geliştirici kişisel portfolio sitesi." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">GoktugDev<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#skills">Beceriler</a></li>
+        <li><a href="#projects">Projeler</a></li>
+        <li><a href="#education">Eğitim</a></li>
+        <li><a href="#experience">Deneyim</a></li>
+        <li><a href="#contact">İletişim</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menü">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Yeni Mezun · Yazılım Geliştirici
+      </div>
+      <h1 class="hero-name">
+        Şükrü Göktuğ<br />
+        <span class="accent">Erdoğan</span>
+      </h1>
+      <p class="hero-sub">
+        <span class="typed" id="typed"></span>
+      </p>
+      <p class="hero-desc">
+        Bartın Üniversitesi Bilgisayar Teknolojisi ve Bilişim Sistemleri mezunu.
+        Web geliştirme, yazılım mühendisliği ve veri sistemleri üzerine tutkuyla çalışıyorum.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> Projelerimi Gör
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-envelope"></i> İletişime Geç
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/goktugerdogan3" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sukru-goktug-erdogan" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:sukruerdo38@gmail.com" aria-label="E-posta"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="filename">developer.js</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">const</span> <span class="var">developer</span> = {
+  <span class="key">name</span>: <span class="str">"Göktuğ Erdoğan"</span>,
+  <span class="key">age</span>: <span class="num">23</span>,
+  <span class="key">role</span>: <span class="str">"Full Stack Dev"</span>,
+  <span class="key">university</span>: <span class="str">"Bartın Ünv."</span>,
+  <span class="key">open_to_work</span>: <span class="bool">true</span>,
+  <span class="key">skills</span>: [
+    <span class="str">"PHP"</span>, <span class="str">"JavaScript"</span>,
+    <span class="str">"Python"</span>, <span class="str">"MySQL"</span>,
+    <span class="str">"Unity"</span>, <span class="str">"C#"</span>
+  ]
+};</code></pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Aşağı kaydır</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. Hakkımda</span>
+        <h2>Merhaba, ben Göktuğ 👋</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            22 Mayıs 2003 doğumluyum. Bartın Üniversitesi Fen Fakültesi
+            <strong>Bilgisayar Teknolojisi ve Bilişim Sistemleri</strong> bölümünden
+            yeni mezun oldum.
+          </p>
+          <p>
+            Üniversite boyunca web teknolojileri, yazılım geliştirme, veritabanı
+            yönetimi ve ağ sistemleri üzerine kapsamlı bir eğitim aldım.
+            Özellikle <strong>full-stack web geliştirme</strong> ve
+            <strong>Python tabanlı uygulamalar</strong> konusunda kendimi geliştirdim.
+          </p>
+          <p>
+            Yazılım dünyasındaki gelişmeleri takip etmeyi, açık kaynak projelere
+            katkıda bulunmayı ve yeni teknolojileri keşfetmeyi seviyorum.
+            Takım çalışmasına yatkın, öğrenmeye açık ve problem çözme odaklı
+            bir yaklaşımla çalışıyorum.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-birthday-cake"></i>
+              <span>22 Mayıs 2003</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Türkiye</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Bartın Üniversitesi, BTBS</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <span>İş arıyorum — Açık pozisyonlara başvuruyorum</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Yıl Eğitim</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">7+</span>
+            <span class="stat-label">Proje</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Spor Branşı</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2026</span>
+            <span class="stat-label">Mezuniyet</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Beceriler</span>
+        <h2>Teknoloji & Tasarım Araçları</h2>
+      </div>
+      <div class="skills-grid">
+
+        <!-- ROW 1 -->
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programlama Dilleri</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-php"></i> PHP<span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-python"></i> Python<span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-js-square"></i> JavaScript<span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-hashtag"></i> C# (Unity)<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-globe"></i> Web Geliştirme</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-html5"></i> HTML5 / CSS3<span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-php"></i> PHP / XAMPP<span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-js-square"></i> JavaScript / jQuery<span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-react"></i> React.js<span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> Veritabanı &amp; Araçlar</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-database"></i> MySQL / PostgreSQL<span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-git-alt"></i> Git / GitHub<span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fab fa-linux"></i> Linux / Bash<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-leaf"></i> MongoDB<span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="skill-category">
+          <h3><i class="fas fa-robot"></i> Yapay Zeka &amp; Veri Bilimi</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-brain"></i> NLP / BERT<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-fire"></i> PyTorch<span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-chart-line"></i> Scikit-learn / Pandas<span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-broom"></i> Veri Temizleme<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-comment-dots"></i> ChatGPT / Copilot<span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-magic"></i> Prompt Engineering<span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-paint-brush"></i> Tasarım &amp; Medya</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-image"></i> Adobe Photoshop<span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-film"></i> Adobe Animate<span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-cube"></i> 3ds Max<span>60%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-file-alt"></i> MS Publisher<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-gamepad"></i> Oyun &amp; Robotik</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-unity"></i> Unity (2D)<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-hashtag"></i> C# (Game Dev)<span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-microchip"></i> Arduino<span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><i class="fas fa-cogs"></i> Gömülü Sistem<span>65%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Diğer</h3>
+          <div class="skill-tags">
+            <span class="tag">Bootstrap</span>
+            <span class="tag">REST API</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Chart.js</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">Flutter</span>
+            <span class="tag">Dart</span>
+            <span class="tag">ESP8266 / WiFi</span>
+            <span class="tag">Prompt Engineering</span>
+            <span class="tag">AI Araçları</span>
+            <span class="tag">Ağ Yönetimi</span>
+            <span class="tag">Siber Güvenlik</span>
+            <span class="tag">OOP</span>
+            <span class="tag">2D Game Dev</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Projeler</span>
+        <h2>Neler Yaptım?</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Evrensel Şirket Yönetim Paneli -->
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-building"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Öne Çıkan</span>
+            <h3>Evrensel Şirket Yönetim Paneli</h3>
+            <p>Farklı sektörlerdeki şirketlerin ihtiyaçlarına uyarlanabilen modüler PHP tabanlı yönetim paneli.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-layer-group"></i> <strong>Modüller:</strong> Personel yönetimi, stok takibi, finans modülü, raporlama ve dinamik dashboard</li>
+              <li><i class="fas fa-shield-alt"></i> <strong>Güvenlik:</strong> Rol tabanlı yetkilendirme sistemi, oturum yönetimi, güvenli giriş</li>
+              <li><i class="fas fa-expand-arrows-alt"></i> <strong>Esneklik:</strong> Farklı sektörlere kolayca uyarlanabilen modüler mimari</li>
+            </ul>
+            <div class="project-tech">
+              <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Araç Alım Satım – Açık Artırma -->
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-car"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Öne Çıkan</span>
+            <h3>Gerçek Zamanlı Açık Artırma ile Araç Alım Satım Sistemi</h3>
+            <p>Kullanıcıların araç ilanı açabildiği ve gerçek zamanlı açık artırma ile teklif verebildiği PHP tabanlı platform.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-gavel"></i> <strong>Açık Artırma:</strong> WebSocket destekli anlık teklif güncellemeleri, süre sayacı ve otomatik kapanma</li>
+              <li><i class="fas fa-car"></i> <strong>İlan Sistemi:</strong> Araç detay sayfaları, fotoğraf yükleme, filtre ve arama özellikleri</li>
+              <li><i class="fas fa-user-shield"></i> <strong>Kullanıcı Paneli:</strong> Kayıt/giriş, aktif ilanlar, teklif geçmişi ve güvenli ödeme akışı</li>
+            </ul>
+            <div class="project-tech">
+              <span>PHP</span><span>WebSocket</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Motor Satıcısı Şirket Yönetim Paneli -->
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-motorcycle"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge">Müşteri Projesi</span>
+            <h3>Motor Satıcısı Şirket Yönetim Paneli</h3>
+            <p>Bir motor satıcısına özel geliştirilen PHP tabanlı yönetim sistemi.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-motorcycle"></i> <strong>Stok & Satış:</strong> Motosiklet stok takibi, satış kayıtları ve müşteri yönetimi</li>
+              <li><i class="fas fa-wrench"></i> <strong>Servis Takibi:</strong> Servis talepleri, teknisyen atama ve iş emri yönetimi</li>
+              <li><i class="fas fa-chart-pie"></i> <strong>Raporlama:</strong> Gelir-gider analizi, aylık satış grafikleri ve tek sayfalık yönetici arayüzü</li>
+            </ul>
+            <div class="project-tech">
+              <span>PHP</span><span>MySQL</span><span>Bootstrap</span><span>jQuery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flappy Bird – Unity -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-gamepad"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Oyna" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Flappy Bird — 3 Benzersiz Level (Unity)</h3>
+            <p>Unity ile sıfırdan geliştirilen Flappy Bird klonu.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-layer-group"></i> <strong>Levellar:</strong> Her biri farklı tema, arka plan, engel düzeni ve müziğe sahip 3 özgün level</li>
+              <li><i class="fas fa-gamepad"></i> <strong>Mekanik:</strong> Skor sistemi, can mekanizması, level geçiş animasyonları ve yüksek skor kaydı</li>
+              <li><i class="fas fa-code"></i> <strong>Geliştirme:</strong> C# ile tüm oyun mekaniği sıfırdan yazıldı, Unity 2D fizik motoru kullanıldı</li>
+            </ul>
+            <div class="project-tech">
+              <span>Unity</span><span>C#</span><span>2D Game Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BERT Oyun Yorumu Derecelendirme -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge" style="background:rgba(255,101,132,0.12);border-color:rgba(255,101,132,0.35);color:#ff6584;">NLP / AI</span>
+            <h3>BERT Tabanlı Oyun Yorumu Derecelendirme Modeli</h3>
+            <p>Doğal dil işleme (NLP) ve BERT modeli kullanılarak geliştirilen duygu analizi projesi.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-database"></i> <strong>Veri:</strong> Oyun platformlarından derlenen kullanıcı yorumları veri seti ile eğitim yapıldı</li>
+              <li><i class="fas fa-brain"></i> <strong>Model:</strong> Hugging Face Transformers ile BERT fine-tuning, çok sınıflı derecelendirme tahmini</li>
+              <li><i class="fas fa-chart-bar"></i> <strong>Çıktı:</strong> Metin yorumuna dayanarak oyunun puan/derece kategorisini tahmin eder</li>
+            </ul>
+            <div class="project-tech">
+              <span>Python</span><span>BERT</span><span>NLP</span><span>Hugging Face</span><span>PyTorch</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diyabet Risk Analizi Dashboard -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Demo" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge" style="background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.35);color:#10b981;">Veri Analizi</span>
+            <h3>Diyabet Risk Analizi Dashboard</h3>
+            <p>Gerçek hasta veri seti üzerinde PHP & XAMPP altyapısıyla geliştirilen interaktif analiz paneli.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-broom"></i> <strong>Veri Ön İşleme:</strong> Eksik veri doldurma, aykırı değer tespiti ve özellik normalizasyonu uygulandı</li>
+              <li><i class="fas fa-chart-pie"></i> <strong>Görselleştirme:</strong> Risk gruplarına göre dinamik grafikler, filtreler ve karşılaştırmalı analizler</li>
+              <li><i class="fas fa-user-md"></i> <strong>Raporlama:</strong> Hasta bazlı diyabet risk skoru hesaplama ve kategori bazlı istatistik raporları</li>
+            </ul>
+            <div class="project-tech">
+              <span>PHP</span><span>XAMPP</span><span>MySQL</span><span>JavaScript</span><span>Chart.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Robot Süpürge -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge" style="background:rgba(254,188,46,0.12);border-color:rgba(254,188,46,0.35);color:#febc2e;">Robotik / Donanım</span>
+            <h3>Otonom Robot Süpürge (Arduino)</h3>
+            <p>Robotik kodlama dersi kapsamında tamamen özgün tasarımla geliştirilen otonom temizlik robotu.</p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-microchip"></i> <strong>Donanım:</strong> Arduino Uno, HC-SR04 ultrasonik sensör, kızılötesi sensörler, L298N motor sürücü, DC motorlar ve özgün gövde tasarımı</li>
+              <li><i class="fas fa-route"></i> <strong>Çalışma Prensibi:</strong> Sensörler engelleri algılar, belirli mesafe altında otomatik geri çekilerek yön değiştirir ve yüzeyi sistematik tarar</li>
+              <li><i class="fas fa-drafting-compass"></i> <strong>Tasarım:</strong> Motor, tekerlek ve mekanik gövde tamamen özgün olup Arduino IDE ile C++ kodlaması yapıldı</li>
+            </ul>
+            <div class="project-tech">
+              <span>Arduino</span><span>C++</span><span>Ultrasonik Sensör</span><span>Motor Sürücü</span><span>Gömülü Sistem</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Akıllı Saksı İzleme Sistemi -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-seedling"></i></div>
+            <div class="project-links">
+              <a href="#" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-badge" style="background:rgba(16,185,129,0.12);border-color:rgba(16,185,129,0.35);color:#10b981;">IoT / Mobil</span>
+            <h3>Akıllı Saksı İzleme Sistemi (Arduino + Flutter)</h3>
+            <p>
+              Saksı bitkisinin çevresel ihtiyaçlarını gerçek zamanlı izleyen
+              IoT projesi. Arduino ile toplanan sensör verileri Flutter tabanlı
+              mobil uygulama üzerinden anlık takip edilebiliyor.
+            </p>
+            <ul class="project-detail-list">
+              <li><i class="fas fa-microchip"></i> <strong>Donanım:</strong> Arduino Uno, DHT11 (sıcaklık & nem), toprak nem sensörü, LDR (ışık), su seviye sensörü, OLED ekran, WiFi modülü (ESP8266)</li>
+              <li><i class="fas fa-cogs"></i> <strong>Çalışma Prensibi:</strong> Sensörler toprağın nem oranını, ortam sıcaklığını, nem seviyesini, ışık yoğunluğunu ve su rezervini ölçer. Eşik değerler aşıldığında uyarı üretir.</li>
+              <li><i class="fas fa-mobile-alt"></i> <strong>Mobil Uygulama:</strong> Flutter ile geliştirilen Android/iOS uygulaması verileri gerçek zamanlı görüntüler, sulama ve ışık önerileri sunar.</li>
+            </ul>
+            <div class="project-tech">
+              <span>Arduino</span><span>Flutter</span><span>Dart</span><span>ESP8266</span><span>DHT11</span><span>IoT</span><span>C++</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="projects-more">
+        <a href="https://github.com/" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub'da Daha Fazlasını Gör
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Eğitim</span>
+        <h2>Akademik Geçmiş</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Bilgisayar Teknolojisi ve Bilişim Sistemleri</h3>
+                <span class="institution">Bartın Üniversitesi, Fen Fakültesi</span>
+              </div>
+              <span class="period">2022 — 2026</span>
+            </div>
+            <p>
+              Veri yapıları ve algoritmalar, nesne yönelimli programlama,
+              veritabanı yönetim sistemleri, bilgisayar ağları, işletim sistemleri,
+              yazılım mühendisliği ve siber güvenlik konularında kapsamlı eğitim aldım.
+            </p>
+            <div class="courses">
+              <span>Veri Yapıları</span>
+              <span>Algoritmalar</span>
+              <span>Veritabanı Sistemleri</span>
+              <span>Bilgisayar Ağları</span>
+              <span>İşletim Sistemleri</span>
+              <span>Yazılım Mühendisliği</span>
+              <span>Web Programlama</span>
+              <span>Siber Güvenlik</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>XAMPP</span>
+              <span>JavaScript</span>
+              <span>WebSocket</span>
+              <span>Bootstrap</span>
+              <span>jQuery</span>
+              <span>Unity</span>
+              <span>C#</span>
+              <span>2D Oyun Geliştirme</span>
+              <span>Python</span>
+              <span>NLP</span>
+              <span>BERT</span>
+              <span>Hugging Face</span>
+              <span>PyTorch</span>
+              <span>Duygu Analizi</span>
+              <span>Fine-tuning</span>
+              <span>Makine Öğrenmesi</span>
+              <span>Veri Temizleme</span>
+              <span>Veri Ön İşleme</span>
+              <span>Dashboard Geliştirme</span>
+              <span>Chart.js</span>
+              <span>Arduino</span>
+              <span>Arduino IDE</span>
+              <span>C++ (Gömülü)</span>
+              <span>Robotik Kodlama</span>
+              <span>Sensör Entegrasyonu</span>
+              <span>Motor Sürücü</span>
+              <span>Gömülü Sistem</span>
+              <span>Donanım Tasarımı</span>
+              <span>IoT</span>
+              <span>ESP8266 / WiFi Modülü</span>
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Mobil Uygulama Geliştirme</span>
+              <span>OOP</span>
+              <span>REST API</span>
+              <span>Git / GitHub</span>
+              <span>Adobe Photoshop</span>
+              <span>Adobe Animate</span>
+              <span>3ds Max</span>
+              <span>MS Publisher</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Aydınlıkevler Anadolu Lisesi</h3>
+                <span class="institution">Lise Eğitimi</span>
+              </div>
+              <span class="period">2017 — 2021</span>
+            </div>
+            <p>
+              Anadolu Lisesi programını başarıyla tamamladım. Mezuniyet tarihim
+              02 Temmuz 2021 olup diploma puanım <strong>65,24</strong>'tür.
+              Öğrenim sürem <strong>4 yıl</strong>dır.
+            </p>
+            <div class="courses">
+              <span>Yabancı Dil: İngilizce</span>
+              <span>Diploma Puanı: 65,24</span>
+              <span>Mezuniyet: Temmuz 2021</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certificates -->
+      <div class="certs-section">
+        <h3 class="certs-title">Sertifikalar & Belgeler</h3>
+        <div class="certs-grid">
+
+          <div class="cert-card cert-official">
+            <i class="fas fa-certificate"></i>
+            <div>
+              <h4>Arıcılık Kurs Bitirme Belgesi</h4>
+              <span>MEB Hayat Boyu Öğrenme · 84 Saat · Temmuz–Aralık 2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card cert-official">
+            <i class="fas fa-swimming-pool"></i>
+            <div>
+              <h4>Türkiye Yüzme Federasyonu Lisansı</h4>
+              <span>Elit Seva Spor Kulübü · Kayseri · 2012–2024</span>
+            </div>
+          </div>
+
+          <div class="cert-card cert-official">
+            <i class="fas fa-running"></i>
+            <div>
+              <h4>Atletizm Lisansı</h4>
+              <span>Okul Sporları · Gençler A &amp; Yıldızlar · Kayseri · 2015–2018</span>
+            </div>
+          </div>
+
+          <div class="cert-card cert-official">
+            <i class="fas fa-futbol"></i>
+            <div>
+              <h4>Futbol Lisansı</h4>
+              <span>Okul Sporları · Yıldızlar Kategorisi · Kayseri · 2015–2016</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Spor Dereceleri -->
+        <h3 class="certs-title" style="margin-top:2.5rem;">Spor Dereceleri</h3>
+        <div class="certs-grid">
+
+          <div class="cert-card cert-award">
+            <i class="fas fa-medal"></i>
+            <div>
+              <h4>Yüzme — 50M Kurbağalama · 11. Derece</h4>
+              <span>Kayseri İli Gençler A Erkek Mahalli Müsabakaları · 2019-2020</span>
+            </div>
+          </div>
+
+          <div class="cert-card cert-award">
+            <i class="fas fa-medal"></i>
+            <div>
+              <h4>Yüzme — 100M Kurbağalama · 13. Derece</h4>
+              <span>Kayseri İli Gençler A Erkek Mahalli Müsabakaları · 2019-2020</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="certs-note">
+          <i class="fas fa-info-circle"></i>
+          Tüm spor lisansları T.C. Gençlik ve Spor Bakanlığı kayıtlıdır.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Deneyim</span>
+        <h2>Pratik Deneyim</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Yazman — Bilimsel Araştırma Kulübü</h3>
+                <span class="institution">Bartın Üniversitesi · Öğrenci Kulübü</span>
+              </div>
+              <span class="period">2024 — 2025</span>
+            </div>
+            <p>
+              Bartın Üniversitesi Bilimsel Araştırma Kulübü'nde yazman olarak görev yaptım.
+              Kulüp toplantılarının tutanaklarını düzenledim, etkinlik organizasyonlarına
+              katkıda bulundum ve kulüp faaliyetlerinin yazılı kayıt altına alınması
+              süreçlerini yürüttüm.
+            </p>
+            <div class="courses">
+              <span>Yazman</span>
+              <span>Toplantı Yönetimi</span>
+              <span>Etkinlik Organizasyonu</span>
+              <span>Bilimsel Araştırma</span>
+              <span>Takım Çalışması</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Öğretmenlik Uygulaması</h3>
+                <span class="institution">MEB Bağlı Okul · Pedagojik Formasyon Kapsamında</span>
+              </div>
+              <span class="period">2025 — 2026</span>
+            </div>
+            <p>
+              Milli Eğitim Bakanlığı'na bağlı bir okulda pedagojik formasyon
+              eğitimi kapsamında öğretmenlik uygulaması gerçekleştirdim.
+              Bilişim teknolojileri alanında sınıf yönetimi, ders planlaması
+              ve öğrenci ile iletişim konularında pratik deneyim edindim.
+              Formasyon eğitimi devam etmektedir.
+            </p>
+            <div class="courses">
+              <span>Sınıf Yönetimi</span>
+              <span>Ders Planlaması</span>
+              <span>Bilişim Teknolojileri Öğretimi</span>
+              <span>Öğrenci İletişimi</span>
+              <span>MEB Müfredatı</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06. İletişim</span>
+        <h2>Çalışalım mı?</h2>
+        <p class="contact-intro">
+          Yeni mezun ve iş fırsatlarına açığım. Projeleriniz veya iş teklifleriniz
+          için benimle iletişime geçebilirsiniz.
+        </p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>E-posta</h4>
+              <a href="mailto:sukruerdo38@gmail.com">sukruerdo38@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/goktugerdogan3" target="_blank">github.com/goktugerdogan3</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/sukru-goktug-erdogan" target="_blank">Şükrü Göktuğ Erdoğan</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Konum</h4>
+              <span>Kayseri, Türkiye (Uzaktan çalışmaya açık)</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xwvdkyjz" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ad Soyad</label>
+              <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta</label>
+              <input type="email" id="email" name="email" placeholder="ornek@mail.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Konu</label>
+            <input type="text" id="subject" name="subject" placeholder="İş teklifi / Proje iş birliği" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mesaj</label>
+            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı buraya yazın..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-w">
+            <i class="fas fa-paper-plane"></i> Gönder
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <span>© 2026 Şükrü Göktuğ Erdoğan</span>
+        <span class="sep">·</span>
+        <span>Tasarım & Geliştirme: Şükrü Göktuğ Erdoğan</span>
+      </p>
+      <p class="footer-sub">Bartın Üniversitesi BTBS Mezunu</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
